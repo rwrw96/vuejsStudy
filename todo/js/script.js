@@ -1,3 +1,11 @@
 var app = new Vue({
-    el: "#app"
+    el: "#app",
+    methods: {
+        addClick: function(event) {
+            
+            }
+        },
+    data: {
+        newItem: ""
+    }
 })
