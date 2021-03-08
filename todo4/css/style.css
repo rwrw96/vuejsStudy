@@ -1,0 +1,7 @@
+#app .done {
+    text-decoration: line-through;
+}
+
+#app ul {
+    list-style: none;
+}
