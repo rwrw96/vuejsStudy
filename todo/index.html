@@ -15,8 +15,14 @@
             <button v-on:click="addItem">
                 Add
             </button>
-            <pre>{{ $data }}</pre>
         </form>
+            <ul>
+                <li v-for="todo in todos">
+                    <input type="checkbox" v-model="todo.isDone">
+                    <span>{{ todo.item }}</span>
+                </li>
+            </ul>
+            <pre>{{ $data }}</pre>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
