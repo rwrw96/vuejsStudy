@@ -9,13 +9,16 @@
 </head>
 <body>
     <div id="app">
-        <p v-cloak>
-            {{ message.split("").reverse().join("") }}
+        <p>
+            <input type="text" v-model:vlaue="km">km
         </p>
-        <p v-cloak>
-            {{ reverseMessage }}
+        <p>
+            <input type="text" v-model:value="m">m
         </p>
-        <button v-on:click="changeItem">change</button>
+        <p>
+            <input type="text" v-model:value="mm">mm
+        </p>
+        <pre>{{ $data }}</pre>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="script.js"></script>
