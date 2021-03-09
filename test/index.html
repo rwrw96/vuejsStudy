@@ -10,7 +10,10 @@
 <body>
     <div id="app">
         <p v-cloak>
-            {{ message }}
+            {{ message.split("").reverse().join("") }}
+        </p>
+        <p v-cloak>
+            {{ reverseMessage }}
         </p>
         <button v-on:click="changeItem">change</button>
     </div>

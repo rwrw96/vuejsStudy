@@ -5,7 +5,12 @@ var app = new Vue ({
     },
     methods: {
         changeItem: function(){
-            this.message = this.message.split("").reverse().join("");
+
+        }
+    },
+    computed: {
+        reverseMessage: function(){
+            return this.message.split("").reverse().join("");
         }
     }
 })
