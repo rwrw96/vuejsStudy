@@ -15,7 +15,7 @@ var app = new Vue({
             this.newItem = ""
         },
         deleteItem: function(index) {
-            this.todos.splice(index, 1);
+            this.todos.splice(index, 1);        
         }
         
     }
