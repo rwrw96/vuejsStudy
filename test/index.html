@@ -9,16 +9,10 @@
 </head>
 <body>
     <div id="app">
-        <p>
-            <input type="text" v-model:vlaue="km">km
-        </p>
-        <p>
-            <input type="text" v-model:value="m">m
-        </p>
-        <p>
-            <input type="text" v-model:value="mm">mm
-        </p>
-        <pre>{{ $data }}</pre>
+        firstName: <input type="text" v-model="firstName">
+        lastName: <input type="text" v-model="lastName">
+
+        fullName: {{ fullName }}
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="script.js"></script>
