@@ -9,10 +9,14 @@
 </head>
 <body>
     <div id="app">
-        <button v-on:click="show=!show">切り替え</button>
-        <transition>
-            <p v-if="show">hello, vue.js</p>
-        </transition>
+    <input type="text" v-model="monster">
+    <button v-on:click="addMonster">モンスターを追加</button>
+    <ul>
+        <li v-for="item in list" v-bind:key="item.id">
+            ID:{{ item.id }} {{ item.monster }} HP:{{ item.HP }}
+        </li>
+    </ul>
+        <p> {{$data}}</p>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
