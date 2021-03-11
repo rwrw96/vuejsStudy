@@ -14,6 +14,8 @@
     <ul>
         <li v-for="(item, index) in list" v-bind:key="item.id">
             ID:{{ item.id }} {{ item.monster }} HP:{{ item.HP }}
+            <span v-if="item.HP <50">瀕死！</span>
+            <button v-on:click="doAttack(index)">モンスター攻撃</button>
             <button v-on:click="doRemove(index)">モンスターを削除</button>
         </li>
     </ul>
