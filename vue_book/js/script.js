@@ -18,6 +18,9 @@ var app = new Vue ({
                 monster: this.monster,
                 HP: 1000
             })
+        },
+        doRemove: function(index){
+            this.list.splice(index,1)
         }
     }
 })
